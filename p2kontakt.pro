@@ -9,50 +9,51 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    aboutwindow.cpp \
-    addcontactdialog.cpp \
-    authoriseipdialog.cpp \
-    client.cpp \
-    cryptography.cpp \
-    decryptdialog.cpp \
-    encryptdialog.cpp \
-    exportdialog.cpp \
-    identity.cpp \
-    identitydialog.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    network.cpp \
-    server.cpp
+    src/aboutwindow.cpp \
+    src/addcontactdialog.cpp \
+    src/authoriseipdialog.cpp \
+    src/client.cpp \
+    src/cryptography.cpp \
+    src/decryptdialog.cpp \
+    src/encryptdialog.cpp \
+    src/exportdialog.cpp \
+    src/identity.cpp \
+    src/identitydialog.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
+    src/network.cpp \
+    src/server.cpp
 
 HEADERS += \
-    aboutwindow.hpp \
-    addcontactdialog.hpp \
-    authoriseipdialog.hpp \
-    client.hpp \
-    cryptography.hpp \
-    decryptdialog.hpp \
-    encryptdialog.hpp \
-    exportdialog.hpp \
-    identity.hpp \
-    identitydialog.hpp \
-    mainwindow.hpp \
-    network.hpp \
-    server.hpp
+    include/aboutwindow.hpp \
+    include/addcontactdialog.hpp \
+    include/authoriseipdialog.hpp \
+    include/client.hpp \
+    include/cryptography.hpp \
+    include/decryptdialog.hpp \
+    include/encryptdialog.hpp \
+    include/exportdialog.hpp \
+    include/identity.hpp \
+    include/identitydialog.hpp \
+    include/mainwindow.hpp \
+    include/network.hpp \
+    include/server.hpp
 
 FORMS += \
-    aboutwindow.ui \
-    addcontactdialog.ui \
-    authoriseipdialog.ui \
-    decryptdialog.ui \
-    encryptdialog.ui \
-    exportdialog.ui \
-    identitydialog.ui \
-    mainwindow.ui
+    include/aboutwindow.ui \
+    include/addcontactdialog.ui \
+    include/authoriseipdialog.ui \
+    include/decryptdialog.ui \
+    include/encryptdialog.ui \
+    include/exportdialog.ui \
+    include/identitydialog.ui \
+    include/mainwindow.ui
 
 TRANSLATIONS += \
     p2kontakt_en_GB.ts
 CONFIG += lrelease
 CONFIG += embed_translations
+INCLUDEPATH = ./include
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
