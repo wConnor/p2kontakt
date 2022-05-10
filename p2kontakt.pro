@@ -40,20 +40,20 @@ HEADERS += \
     include/server.hpp
 
 FORMS += \
-    include/aboutwindow.ui \
-    include/addcontactdialog.ui \
-    include/authoriseipdialog.ui \
-    include/decryptdialog.ui \
-    include/encryptdialog.ui \
-    include/exportdialog.ui \
-    include/identitydialog.ui \
-    include/mainwindow.ui
+    forms/aboutwindow.ui \
+    forms/addcontactdialog.ui \
+    forms/authoriseipdialog.ui \
+    forms/decryptdialog.ui \
+    forms/encryptdialog.ui \
+    forms/exportdialog.ui \
+    forms/identitydialog.ui \
+    forms/mainwindow.ui
 
 TRANSLATIONS += \
     p2kontakt_en_GB.ts
 CONFIG += lrelease
 CONFIG += embed_translations
-INCLUDEPATH = ./include
+INCLUDEPATH = include/ forms/
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
