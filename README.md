@@ -24,4 +24,6 @@ $ ./p2kontakt
 
 ### Windows
 
-### Screenshots
+## Screenshots
+![Chat Example](/images/chat-example.png)
+Example of chat taking place between two users. Messages are fully encryptedusing GPG whilst being transferred.
