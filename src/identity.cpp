@@ -2,11 +2,12 @@
 
 Identity::Identity()
 {
-
+    Cryptography crypto;
 }
 
 Identity::Identity(QFile &file)
 {
+    Cryptography crypto;
     load_identity(file);
 }
 
