@@ -25,5 +25,10 @@ $ ./p2kontakt
 ### Windows
 
 ## Screenshots
+![Identity Creation](/images/identity-creation.png)
+
+Identity creation screen that the user is prompted with upon first launch. Multiple different identities can be created.
+
 ![Chat Example](/images/chat-example.png)
-Example of chat taking place between two users. Messages are fully encryptedusing GPG whilst being transferred.
+
+Example of chat taking place between two users. Messages are fully encrypted using GPG whilst being transferred.
